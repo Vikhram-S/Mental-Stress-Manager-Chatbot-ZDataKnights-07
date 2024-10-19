@@ -1,49 +1,92 @@
-Personalized Relationship Stress Manager
-Project Overview
-This project is part of the IBM Z Datathon 2024, created to address social issues through technology under the 'Tech for Good' theme. The Personalized Relationship Stress Manager is a machine learning-based tool designed to help individuals manage relationship stress and resolve conflicts. The solution includes a Gradio-based chatbot that interacts with users and provides personalized stress management advice based on machine learning predictions.
+Mental Stress Manager Chatbot
+This project is designed to help users assess their stress levels and provide personalized suggestions for managing stress. The chatbot collects user data such as age, gender, sleep quality, physical activity, and health metrics, and uses a RandomForestRegressor model to predict the user's stress level.
 
 Features
-Chatbot Interface: A Gradio chatbot that interacts with users, gathering data and offering personalized stress management solutions.
-Stress Prediction: Utilizes the RandomForestRegressor for stress level predictions based on input data.
-Cross-validation: Employs StratifiedKFold cross-validation for robust model performance.
-Conflict Resolution: Offers personalized strategies to resolve relationship stress based on predictions.
-Dataset
-The dataset includes multiple factors influencing relationship stress. The model is trained on this data to predict stress levels and provide relevant advice.
+Interactive chatbot powered by Gradio.
+Gathers information such as age, gender, occupation, health stats, and lifestyle habits.
+Predicts stress level using a trained RandomForestRegressor model.
+Provides tailored suggestions based on the predicted stress level (High, Medium, Low).
+Includes an intuitive UI, suitable for non-technical users.
+Model Performance
+The model was trained on a cleaned dataset, and performance was evaluated using the following metrics:
 
-Installation and Setup
-Requirements
-Python 3.x
-Gradio
-Jupyter Notebook
-Libraries:
-scikit-learn
-pandas
-numpy
-matplotlib
-Steps
-Install the required libraries:
+Root Mean Squared Error (RMSE): 0.1515
+Mean Squared Error (MSE): 0.0229
+Mean Absolute Error (MAE): 0.0427
+R-squared (R²): 0.9927
+Cross-validation was also performed using Stratified K-Fold:
+
+Average RMSE: 0.2101
+Average MAE: 0.0546
+Average R-squared: 0.9859
+Installation and Usage
+1. Clone the repository:
+bash
+Copy code
+git clone https://github.com/yourusername/mental-stress-manager-chatbot.git
+cd mental-stress-manager-chatbot
+2. Install the required packages:
 bash
 Copy code
 pip install -r requirements.txt
-Launch the Gradio chatbot:
+3. Run the chatbot:
 bash
 Copy code
 python chatbot.py
-Usage
-Chatbot Interface: The Gradio chatbot will ask users questions to assess their stress levels. Based on the responses, it will provide personalized stress management strategies.
-Notebook: Open the Jupyter Notebook to explore the model development process, including data preprocessing, training, and evaluation.
-Model Performance
-The model has been evaluated using StratifiedKFold cross-validation to ensure balanced training. Key performance metrics include:
+4. Access the chatbot:
+The chatbot will launch a local server, which you can access via your browser to interact with the bot.
 
-Accuracy: XX%
-RMSE: XX
-MAE: XX
-Future Work
-Implement deep learning models for improved prediction accuracy.
-Expand the dataset to include a broader range of stress-related factors.
-Extend the chatbot for real-time stress tracking and proactive management.
+How It Works
+1. Data Collection:
+The chatbot collects data from the user interactively, such as:
+
+Gender
+Age
+Occupation
+Sleep Duration and Quality
+Physical Activity Level
+Health Metrics (BMI, Blood Pressure, Heart Rate, etc.)
+2. Stress Prediction:
+The collected data is fed into the trained RandomForest model, which predicts the user's stress level based on these inputs.
+
+3. Suggestions:
+The chatbot provides personalized recommendations to help manage stress, depending on whether the predicted stress level is low, medium, or high.
+
+Gradio Interface
+The chatbot uses the Gradio library for a simple and effective web-based interface. The chatbot can be used to:
+
+Start conversations
+Assess stress levels
+Provide stress management tips
+Dataset
+The dataset includes various factors that contribute to stress levels, such as age, gender, occupation, health statistics, and lifestyle habits. The data is one-hot encoded and split into training and test sets for the model.
+
+Model Details
+The RandomForestRegressor is used to predict the stress level based on the following features:
+
+Age
+Sleep Duration
+Quality of Sleep
+Physical Activity Level
+Heart Rate
+Blood Pressure
+Occupation
+BMI Category
+Sleep Disorders
 Contributing
-Contributions are welcome! Fork the repository and create a pull request to contribute.
+Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
 
+Contributors
+Your Name
+Contributor 2 - GitHub Profile
+Contributor 3 - GitHub Profile
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
+
+You can replace the Contributor 2, Contributor 3, and links with actual contributors' details. Let me know if any further changes are needed!
+
+
+
+
+
+
