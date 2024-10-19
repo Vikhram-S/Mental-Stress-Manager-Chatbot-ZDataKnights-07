@@ -1,4 +1,3 @@
-```
 Personalized Relationship Stress Manager
 Project Overview
 This project is part of the IBM Z Datathon 2024, created to address social issues through technology under the 'Tech for Good' theme. The Personalized Relationship Stress Manager is a machine learning-based tool designed to help individuals manage relationship stress and resolve conflicts. The solution includes a Gradio-based chatbot that interacts with users and provides personalized stress management advice based on machine learning predictions.
@@ -22,10 +21,6 @@ pandas
 numpy
 matplotlib
 Steps
-Clone this repository:
-bash
-Copy code
-git clone https://github.com/yourusername/stress-manager.git
 Install the required libraries:
 bash
 Copy code
@@ -49,6 +44,6 @@ Expand the dataset to include a broader range of stress-related factors.
 Extend the chatbot for real-time stress tracking and proactive management.
 Contributing
 Contributions are welcome! Fork the repository and create a pull request to contribute.
-```
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
