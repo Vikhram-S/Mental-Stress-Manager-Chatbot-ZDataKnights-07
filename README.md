@@ -11,15 +11,17 @@ Includes an intuitive UI, suitable for non-technical users.
 # Model Performance
 The model was trained on a Public dataset from Kaggle, and performance was evaluated using the following metrics:
 
-Root Mean Squared Error (RMSE): 0.1515
-Mean Squared Error (MSE): 0.0229
-Mean Absolute Error (MAE): 0.0427
-R-squared (R²): 0.9927
-Cross-validation was also performed using Stratified K-Fold:
+# Root Mean Squared Error (RMSE): 0.1515
+# Mean Squared Error (MSE): 0.0229
+# Mean Absolute Error (MAE): 0.0427
+# R-squared (R²): 0.9927
 
-Average RMSE: 0.2101
-Average MAE: 0.0546
-Average R-squared: 0.9859
+# Cross-validation was also performed using Stratified K-Fold:
+
+# Average RMSE: 0.2101
+# Average MAE: 0.0546
+# Average R-squared: 0.9859
+
 # Installation and Usage
 
 2. Install the required packages:
@@ -69,10 +71,11 @@ Contributing
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
 
 # Team 
-1.Vikhram S
-2.Nitesh Kumar B
-3.Ragul S
-4.Roshan R
+1.Vikhram S,
+2.Nitesh Kumar B,
+3.Ragul S,
+4.Roshan R,
+
 # License
 This project is licensed under the MIT License.
 
