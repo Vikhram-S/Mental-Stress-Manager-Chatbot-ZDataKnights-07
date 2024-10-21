@@ -1,31 +1,32 @@
 # Mental Stress Manager Chatbot - Team Z Data Knights - SAV07
-This project is designed to help users assess their stress levels and provide personalized suggestions for managing stress. The chatbot collects user data such as age, gender, sleep quality, physical activity, and health metrics, and uses a RandomForestRegressor model to predict the user's stress level.
 
-# Features
-Interactive chatbot powered by Gradio.
-Gathers information such as age, gender, occupation, health stats, and lifestyle habits.
-Predicts stress level using a trained RandomForestRegressor model.
-Provides tailored suggestions based on the predicted stress level (High, Medium, Low).
-Includes an intuitive UI, suitable for non-technical users.
+This project is designed to help users assess their stress levels and provide personalized suggestions for managing stress. The chatbot collects user data such as age, gender, sleep quality, physical activity, and health metrics, and uses a **RandomForestRegressor** model to predict the user's stress level.
 
-# Model Performance
-The model was trained on a Public dataset from Kaggle, and performance was evaluated using the following metrics:  
+### **Features**
+- Interactive chatbot powered by **Gradio**.
+- Gathers information such as age, gender, occupation, health stats, and lifestyle habits.
+- Predicts stress level using a trained **RandomForestRegressor** model.
+- Provides tailored suggestions based on the predicted stress level (High, Medium, Low).
+- Includes an intuitive UI, suitable for non-technical users.
+- **Uses IBM LinuxONE Jupyter Lab** for model training and deployment.
 
-**Root Mean Squared Error (RMSE): 0.1515**    
-**Mean Squared Error (MSE): 0.0229**  
-**Mean Absolute Error (MAE): 0.0427**  
-**R-squared (R²): 0.9927** 
+### **Model Performance**
+The model was trained on a **public dataset from Kaggle**, and performance was evaluated using the following metrics:
 
-# Cross-validation was also performed using Stratified K-Fold:
+- **Root Mean Squared Error (RMSE):** 0.1515  
+- **Mean Squared Error (MSE):** 0.0229  
+- **Mean Absolute Error (MAE):** 0.0427  
+- **R-squared (R²):** 0.9927  
 
-**Average RMSE: 0.2101**  
-**Average MAE: 0.0546**  
-**Average R-squared: 0.9859** 
+**Cross-validation** was also performed using **Stratified K-Fold**:  
+- **Average RMSE:** 0.2101  
+- **Average MAE:** 0.0546  
+- **Average R-squared:** 0.9859  
 
-# Installation and Usage
-
-Install the required packages:
-pip install -r requirements.txt
+### **Installation and Usage**
+1. Install the required packages:
+   ```
+   pip install -r requirements.txt
 
 # Access the chatbot:
 The chatbot will launch a local server, which you can access via your browser to interact with the bot.
@@ -67,6 +68,16 @@ Blood Pressure
 Occupation  
 BMI Category  
 Sleep Disorders  
+
+### **Libraries Used**
+- [Gradio](https://gradio.app/) - Used for building the web-based chatbot interface.
+- [scikit-learn](https://scikit-learn.org/stable/) - Used for training the RandomForestRegressor model.
+- [Pandas](https://pandas.pydata.org/) - Used for data manipulation and analysis.
+- [NumPy](https://numpy.org/) - Used for numerical operations.
+- [Matplotlib](https://matplotlib.org/) - Used for plotting and data visualization.
+- [Plotly](https://plotly.com/python/) - Used for creating interactive plots and visualizations.
+- [IBM LinuxONE Jupyter Lab](https://www.ibm.com/it-infrastructure/linuxone) - Used for model training and deployment.
+
 
 # Team 
 1.Vikhram S - https://github.com/Vikhram-S  
