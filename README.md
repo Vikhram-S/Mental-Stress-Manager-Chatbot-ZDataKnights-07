@@ -2,6 +2,8 @@
 
 This project is designed to help users assess their stress levels and provide personalized suggestions for managing stress. The chatbot collects user data such as age, gender, sleep quality, physical activity, and health metrics, and uses a **RandomForestRegressor** model to predict the user's stress level.
 
+### **Live Demo**
+https://stress-manager-chatbot-using-ml-vikhrams.streamlit.app/
 ### **Features**
 - Interactive chatbot powered by **Gradio**.
 - Gathers information such as age, gender, occupation, health stats, and lifestyle habits.
