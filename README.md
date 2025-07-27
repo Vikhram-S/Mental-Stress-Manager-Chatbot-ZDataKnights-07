@@ -29,6 +29,14 @@ The model was trained on a **public dataset from Kaggle**, and performance was e
 1. Install the required packages:
    ```
    pip install -r requirements.txt
+   ```
+2. To launch with Streamlit:
+   ```
+   streamlit run streamlit_app.py
+   ```
+This will start a Streamlit server. Open the link provided in the terminal to access the app.
+
+
 
 # Access the chatbot:
 The chatbot will launch a local server, which you can access via your browser to interact with the bot.
