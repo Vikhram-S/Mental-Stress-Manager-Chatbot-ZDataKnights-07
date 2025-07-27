@@ -57,14 +57,16 @@ The collected data is fed into the trained RandomForest model, which predicts th
 **4. Suggestions:** 
 The chatbot provides personalized recommendations to help manage stress, depending on whether the predicted stress level is low, medium, or high.
 
-# Gradio Interface
-The chatbot uses the Gradio library for a simple and effective web-based interface. The chatbot can be used to:
+# Interface
+**Gradio**:
+Simple web-based chatbot interface.
 
-Start conversations
-Assess stress levels
-Provide stress management tips
-Dataset
-The dataset includes various factors that contribute to stress levels, such as age, gender, occupation, health statistics, and lifestyle habits. The data is one-hot encoded and split into training and test sets for the model.
+Use for quick assessments and tips.
+
+**Streamlit**:
+Interactive dashboard-style UI.
+
+Includes visualizations, input forms, prediction feedback, and charts.
 
 # Model Details
 The RandomForestRegressor is used to predict the stress level based on the following features:
@@ -80,6 +82,7 @@ BMI Category
 Sleep Disorders  
 
 ### **Libraries Used**
+- [Streamlit](https://streamlit.io/) - Used for building the web-based chatbot interface.
 - [Gradio](https://gradio.app/) - Used for building the web-based chatbot interface.
 - [scikit-learn](https://scikit-learn.org/stable/) - Used for training the RandomForestRegressor model.
 - [Pandas](https://pandas.pydata.org/) - Used for data manipulation and analysis.
@@ -90,7 +93,7 @@ Sleep Disorders
 
 
 # Team 
-1.Vikhram S - https://github.com/Vikhram-S  
+1.Vikhram S - https://github.com/Vikhram-S (Leader)  
 2.Nitesh Kumar B - https://github.com/NitheshKumar-B  
 3.Ragul S - https://github.com/iamraguls  
 4.Roshan R - https://github.com/Roshanr3105  
